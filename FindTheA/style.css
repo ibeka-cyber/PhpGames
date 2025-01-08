@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center;   /* Dikeyde ortalar */
+    height: 100vh;         /* Tüm sayfa yüksekliği */
+    background-image: url("https://i.pinimg.com/736x/0b/90/25/0b9025b1035ac71099dfc85696937316.jpg");
+    flex-direction: column; /* Elemanları dikey hizalar */
+    background-size: cover; /* Resmi tam ekrana sığdırır */
+  background-position: center; /* Resmi ortalar */
+
+  }
+  h1 {
+    margin-bottom: 20px; /* Başlık ile kartlar arası boşluk */
+    text-align: center; /* Başlığı yatayda ortalar */
+    color: #a60000;
+    
+  }
+  .maindiv {
+    display: flex;
+    gap: 15px; /* Kartlar arası boşluk */
+  }
+
+  .card img {
+    width: 200px;
+    height: 300px;
+  }
+
+  /* Raise Butonunun Temel Stili */
+button.raise {
+  background:  #8B0000; /* Koyu kırmızı arka plan */
+  border: 2px solid #8B0000; /* Border rengi koyu kırmızı */
+  color: #E0E0E0; /* Yazı rengi açık gri */
+  font-family: 'Arial', sans-serif; /* Yazı tipi */
+  font-size: 16px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı kalınlığı */
+  line-height: 1.5; /* Satır yüksekliği */
+  text-transform: uppercase; /* Yazıyı büyük harfe dönüştür */
+  letter-spacing: 2px; /* Harfler arasına boşluk */
+  margin: 0.5em;
+  padding: 0.8em 1.5em; /* Buton boyutu */
+  transition: 0.25s; /* Geçiş animasyonu */
+  border-radius: 12px;
+}
+
+button.raise:hover,
+button.raise:focus {
+  border-color: #a60000; /* Hover border rengi daha açık kırmızı */
+  color:rgb(2, 2, 16); /* Hover yazı rengi açık sarı */
+  box-shadow: 0 0.5em 0.5em -0.4em #8B0000; /* Koyu kırmızı gölge */
+  transform: translateY(-0.25em); /* Yukarı kaydırma */
+}
